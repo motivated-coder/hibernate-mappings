@@ -1,0 +1,24 @@
+What does it mean mappedBy ?
+
+This means something like: "modifications on this side of the relation are already Mapped By the other side
+of the relation, so no need to track it here separately in an extra table."
+
+Please check below URLs for complete understanding on : @JoinColumn and mappedBy
+
+#URLs
+https://www.baeldung.com/jpa-joincolumn-vs-mappedby
+https://stackoverflow.com/questions/2749689/what-is-the-owning-side-in-an-orm-mapping
+https://stackoverflow.com/questions/11938253/jpa-joincolumn-vs-mappedby#:~:text=The%20purpose%20of%20the%20MappedBy,opposite%20entity%20of%20this%20relationship.
+
+-------
+In a One-to-Many/Many-to-One relationship, the owning side is usually defined on the many side of the relationship.
+It's usually the side that owns the foreign key.
+
+--------
+
+A great blog on Hibernate mappings
+https://vladmihalcea.com/a-beginners-guide-to-jpa-and-hibernate-cascade-types/
+
+--------
+blog on JPA Entities
+https://www.baeldung.com/jpa-entities
